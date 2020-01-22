@@ -5,6 +5,7 @@ public class Player {
 	private ArrayList<Card> deck = new ArrayList<Card>();	// Card Array List: Cards[] deck
 	private int n = deck.size(); // Length of deck
 	private boolean isWinner = false;
+	private boolean isHuman=false; 
 	
 	public Player(String name, boolean isWinner) {
 		this.name = name;
@@ -31,8 +32,12 @@ public class Player {
 		return isWinner;
 	}
 	
+	public boolean getIsHuman(){
+		return isHuman;
+	}
 	
-	
-	
+	public void setIsHuman() {
+		this.isHuman=true;
+	}
 	
 }
