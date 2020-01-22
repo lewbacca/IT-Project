@@ -1,3 +1,6 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 public class Card {
 	public String description;
 	public int height,weight,length,ferocity,intelligence;
@@ -26,5 +29,22 @@ public class Card {
 	public int intelligence() {
 		return intelligence;
 	}
-	
+	String filePath = "StarCitizenDeck.txt";
+        String s = convertString( filePath );
+		String[] cards = s.split(" ");
+	private static String convertString(String filePath) 
+    	{
+        String content = "";
+ 
+        try
+        {
+            content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
+        } 
+        catch (IOException e) 
+        {
+            e.printStackTrace();
+        }
+        return content;
+    }
+}
 }
