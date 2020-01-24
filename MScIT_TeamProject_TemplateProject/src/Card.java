@@ -26,10 +26,4 @@ public class Card {
 	public int getIntelligence() {
 		return intelligence;
 	}
-	String filePath = "StarCitizenDeck.txt";
-        String s = convertString( filePath );
-		String[] cards = s.split("\\s");
-		for(int i=0;i<cards.length;i++) {
-		System.out.println(cards[i]);
-		}
 }
