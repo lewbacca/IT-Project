@@ -1,9 +1,10 @@
 public class Card {
 	public String description;
 	public int height,weight,length,ferocity,intelligence;
-	public Card(String s,int h,int l,int f,int i) {
+	public Card(String s,int h,int w,int l,int f,int i) {
 	description =  s;
 	height = h;
+	weight = w;
 	length = l;
 	ferocity = f;
 	intelligence = i;
@@ -11,19 +12,23 @@ public class Card {
 	public String getDescription() {
 		return description;
 	}
-	public int getHeight() {
+	public int geteight() {
 		return height;
 	}
-	public int getWeight() {
+	public int weight() {
 		return weight;
 	}
-	public int getLength() {
+	public int length() {
 		return length;
 	}
-	public int getFerocity() {
+	public int ferocity() {
 		return ferocity;
 	}
-	public int getIntelligence() {
+	public int intelligence() {
 		return intelligence;
 	}
+public String toString() 
+    { 
+        return "\nDescription:" + description + "\nHeight:" + height + "\nWeight:" + weight + "\nLength:" + length + "\nFerocity:" + ferocity + "\nIntelligence:" + intelligence; 
+    }
 }
