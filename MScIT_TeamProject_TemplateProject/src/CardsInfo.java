@@ -16,7 +16,7 @@ public class CardsInfo
         String s = convertString( filePath );
 		String[] cards = s.split("\\s");
 		int j=0;
-		for(int i=0;i<cards.length;i+=6) {
+		for(int i=6;i<cards.length;i+=6) {
 		description[j] = cards[i];
 		//System.out.println(description[j]);
 		j++;
@@ -48,8 +48,17 @@ public class CardsInfo
 		System.out.println(intelligence[j]);
 		j++;
 		}
+		Card[] cardsDeck = new Card[4];
+		for(int i=0;i<cardsDeck.length;i++) {
+		cardsDeck[i] = new Card(description[i],height[i],weight[i],length[i],ferocity[i],intelligence[i]);
+		}
+		for(int i=0;i<cardsDeck.length;i++) {
+		System.out.println(cardsDeck[i]);
+		}
 	}
  
+
+	
     //Read file content into string with - Files.readAllBytes(Path path)
  
     private static String convertString(String filePath) 
