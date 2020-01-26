@@ -1,31 +1,21 @@
 public class Card {
-	private String description;
-	private int height,weight,length,ferocity,intelligence;
+	private String name;
+	private int[] description;
 	
-	public Card(String s,int h,int l,int f,int i) {
-	this.description =  s;
-	this.height = h;
-	this.length = l;
-	this.ferocity = f;
-	this.intelligence = i;
+	public Card(String name,int size,int speed, int range,int firepower,int cargo) {
+		this.name=name;
+		this.description=new int[] {size, speed, range, firepower, cargo};
 	}
-	public String getDescription() {
+	
+	public int[] getDescription() {
 		return description;
 	}
-	public int getHeight() {
-		return height;
+	public String getName() {
+		return name;
 	}
-	public int getWeight() {
-		return weight;
+	public String toString() {
+		String s="'"+ name + "':+/n"; //needs finished, same names as the ints in the constructor, same order too, see CLI demo for reference
+		
+		return s;
 	}
-	public int getLength() {
-		return length;
-	}
-	public int getFerocity() {
-		return ferocity;
-	}
-	public int getIntelligence() {
-		return intelligence;
-	}
-
 }

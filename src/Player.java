@@ -25,12 +25,19 @@ public class Player {
 		return name;
 	}
 
-	public int deckSize() {
-		return deck.size();
-	}
-
 	public boolean isWinner() {
 		return isWinner;
+	}
+	public Card nextCard() {
+		return deck.poll();
+	}
+
+	public Queue<Card> getDeck() {
+		return deck;
+	}
+
+	public void setWinner(boolean isWinner) {
+		this.isWinner = isWinner;
 	}
 	
 	

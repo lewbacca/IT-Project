@@ -4,41 +4,48 @@ public class Game {
 		
 		private ArrayList<Player> players= new ArrayList<Player>();
 		private int numberOfRounds;
+		private int numberOfDraws;
 		private ArrayList<Card> communalPile = new ArrayList<Card>();// array list communal pile
-		private boolean isHumanWinner;
+		private Player roundWinner;
+		private int numberOfPlayers;
 		
-		public Game() {
-			this.players.add(new Player("You", true));
-			this.players.add(new Player("AI1", false));
-			this.players.add(new Player("AI2", false));
-			this.players.add(new Player("AI3", false));
-			this.players.add(new Player("AI4", false));
+		public Game(int numberOfPlayers) {
+			this.numberOfPlayers=numberOfPlayers;
 			this.numberOfRounds=0;
+			this.players.add(new Player("You", true));
+			addPlayers(numberOfPlayers-1);
+			deal();
 		}
 
-		public int getNumberOfPlayers() {
-			return this.players.size();
-		}
-
-		public boolean isHumanWinner() {
-			return isHumanWinner;
-		}
-
-		public void setHumanWinner(boolean isHumanWinner) {
-			this.isHumanWinner = isHumanWinner;
+		public Player getroundWinner() {
+			return roundWinner;
 		}
 
 		public int getNumberOfRounds() {
 			return numberOfRounds;
 		}
-
-		public ArrayList<Card> getCommunalPile() {
-			return communalPile;
-		}
 		
-		public void splitCards() { //splits the cards initially
+		public ArrayList<Player> getPlayers() {
+			return players;
+		}
+
+		public int getNumberOfDraws() {
+			return numberOfDraws;
+		}
+
+		public void compareCards() { //uses the deck.poll() method on each member of the players array list,
+									// compares the cards by category,
+									//sets the winner as roundWinner and add the cards to his deck 
 			
 		}
+		public void nextRound() { //checks who the roundWinner is and directs category selection appropriately (human or AI)
+			numberOfRounds++;
+		}
+		public void addPlayers(int amount) { //adds a number of AIs to the players list
+			
+		}
+		public void deal() { //creates a Dealer who splits the cards amongst the players
+			Dealer dealer=new Dealer(this);
+		}
 		
-	
 }
