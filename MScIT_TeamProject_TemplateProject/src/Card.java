@@ -31,4 +31,6 @@ public String toString()
     { 
         return "\nDescription:" + description + "\nHeight:" + height + "\nWeight:" + weight + "\nLength:" + length + "\nFerocity:" + ferocity + "\nIntelligence:" + intelligence; 
     }
+
+    //this is a test comment for getting the thing with GitHub - Andrei made it
 }
