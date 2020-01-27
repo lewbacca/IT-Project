@@ -14,7 +14,11 @@ public class Card {
 		return name;
 	}
 	public String toString() {
-		String s="'"+ name + "':+/n"; //needs finished, same names as the ints in the constructor, same order too, see CLI demo for reference
+		String s="'"+ name + "':\n Size: "+description[0]+
+								"\n Speed: "+description[1]+
+								"\n Range: "+description[2]+
+								"\n Firepower: "+description[3]+
+								"\n Cargo: "+ description[4];
 		
 		return s;
 	}

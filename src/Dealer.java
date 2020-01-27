@@ -12,7 +12,7 @@ public class Dealer {
 		
 	}
 	
-	public void dealCards(){ //takes deck and distributes the cards randomly to the players 
+	public void dealCards(){ //takes deck and distributes the cards randomly to the players, 1 random card at a time for player 1 to 5  
 		
 	}
 }

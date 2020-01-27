@@ -28,10 +28,7 @@ public class Player {
 	public boolean isWinner() {
 		return isWinner;
 	}
-	public Card nextCard() {
-		return deck.poll();
-	}
-
+	
 	public Queue<Card> getDeck() {
 		return deck;
 	}
