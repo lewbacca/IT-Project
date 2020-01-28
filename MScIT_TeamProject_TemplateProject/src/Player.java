@@ -1,14 +1,20 @@
 import java.util.ArrayList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Player {
 	private String name;
-	private ArrayList<Card> deck = new ArrayList<Card>();	// Card Array List: Cards[] deck
-	private int n = deck.size(); // Length of deck
+	private Queue<Card> deck = new PriorityQueue<Card>();	// 
 	private boolean isWinner = false;
+	private boolean isHuman=false;
 	
-	public Player(String name, boolean isWinner) {
-		this.name = name;
-		this.isWinner = isWinner;
+	public Player(String name,boolean isHuman) {
+		this.name=name;
+		this.isHuman=isHuman;
+	}
+
+	public boolean isHuman() {
+		return isHuman;
 	}
 
 	public void addCardToDeck(Card card) {
@@ -19,20 +25,17 @@ public class Player {
 		return name;
 	}
 
-	public ArrayList<Card> getDeck() {
-		return deck;
-	}
-
-	public int getN() {
-		return n;
-	}
-
 	public boolean isWinner() {
 		return isWinner;
 	}
 	
-	
-	
+	public Queue<Card> getDeck() {
+		return deck;
+	}
+
+	public void setWinner(boolean isWinner) {
+		this.isWinner = isWinner;
+	}
 	
 	
 }

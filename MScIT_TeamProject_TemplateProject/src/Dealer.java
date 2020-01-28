@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -52,22 +53,7 @@ public class Dealer
 		}
 			
 		// dealCards(): Distributes Cards
-		public void dealCards() {
-			int deckSize = deck.size();
-			
-			for(int i=0; i<deckSize; i++) {
-				
-				Random rand = new Random();
-				int cardIndex = rand.nextInt(deck.size());
-				int numOfPlayers = game.getPlayers().size();
-				
-				for(int playerIndex=0; playerIndex < numOfPlayers; playerIndex++) {
-					game.getPlayers().get(playerIndex).addCardToDeck(deck.get(cardIndex));
-					deck.remove(deck.get(cardIndex));
-					deckSize--;
-				}				
-			}
-		}
+		
 	
 		//Read file content into string with - Files.readAllBytes(Path path)
 		private static String convertString(String filePath) 
@@ -83,4 +69,18 @@ public class Dealer
         	}
         		return content;
 		}
+
+	
+	public void dealCards(){ //takes deck and distributes the cards randomly to the players, 1 random card at a time for player 1 to 5  
+		while (!deck.isEmpty())
+		for (int i=0;i<game.getPlayers().size();i++) {
+			Random randomNumber= new Random();
+			int random=randomNumber.nextInt(deck.size());
+			game.getPlayers().get(i).addCardToDeck(deck.get(random));
+			this.deck.remove(random);
+			if (deck.isEmpty()) {
+				break;
+			}
+		}
+	}
 }
