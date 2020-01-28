@@ -1,36 +1,25 @@
 public class Card {
-	public String description;
-	public int height,weight,length,ferocity,intelligence;
-	public Card(String s,int h,int w,int l,int f,int i) {
-	description =  s;
-	height = h;
-	weight = w;
-	length = l;
-	ferocity = f;
-	intelligence = i;
+	private String name;
+	private int[] description;
+	
+	public Card(String name,int size,int speed, int range,int firepower,int cargo) {
+		this.name=name;
+		this.description=new int[] {size, speed, range, firepower, cargo};
 	}
-	public String getDescription() {
+	
+	public int[] getDescription() {
 		return description;
 	}
-	public int geteight() {
-		return height;
+	public String getName() {
+		return name;
 	}
-	public int weight() {
-		return weight;
+	public String toString() {
+		String s="'"+ name + "':\n Size: "+description[0]+
+								"\n Speed: "+description[1]+
+								"\n Range: "+description[2]+
+								"\n Firepower: "+description[3]+
+								"\n Cargo: "+ description[4];
+		
+		return s;
 	}
-	public int length() {
-		return length;
-	}
-	public int ferocity() {
-		return ferocity;
-	}
-	public int intelligence() {
-		return intelligence;
-	}
-public String toString() 
-    { 
-        return "\nDescription:" + description + "\nHeight:" + height + "\nWeight:" + weight + "\nLength:" + length + "\nFerocity:" + ferocity + "\nIntelligence:" + intelligence; 
-    }
-
-    //this is a test comment for getting the thing with GitHub - Andrei made it
 }
