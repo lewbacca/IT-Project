@@ -4,7 +4,7 @@ import java.util.Queue;
 
 public class Player {
 	private String name;
-	private Queue<Card> deck = new PriorityQueue<Card>();	// 
+	private ArrayList<Card> deck = new ArrayList<Card>();	// 
 	private boolean isWinner = false;
 	private boolean isHuman=false;
 	
@@ -29,7 +29,7 @@ public class Player {
 		return isWinner;
 	}
 	
-	public Queue<Card> getDeck() {
+	public ArrayList<Card> getDeck() {
 		return deck;
 	}
 
