@@ -8,6 +8,7 @@ public class Game {
 		private ArrayList<Card> communalPile = new ArrayList<Card>();// array list communal pile
 		private Player roundWinner;
 		private int numberOfPlayers;
+		private Player humanPlayer=null;
 		private int chosenCategory;
 		private String filePath;
 		
@@ -16,11 +17,15 @@ public class Game {
 			this.filePath=filePath;
 			this.numberOfRounds=0;
 			this.numberOfDraws=0;
-			Player humanPlayer= new Player("You", true);
+			this.humanPlayer= new Player("You", true);
 			this.roundWinner=humanPlayer;
 			this.players.add(humanPlayer);
 			addPlayers(numberOfPlayers-1); //-1 because this should be the total number of players and we're adding AIs
 			deal();
+		}
+
+		public Player getHumanPlayer() {
+			return humanPlayer;
 		}
 
 		public Player getRoundWinner() {
