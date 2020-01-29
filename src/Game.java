@@ -1,30 +1,47 @@
 import java.util.ArrayList;
 
 public class Game {
-		
-		private ArrayList<Player> players= new ArrayList<Player>();
-		private int numberOfRounds;
-		private int numberOfDraws;
-		private ArrayList<Card> communalPile = new ArrayList<Card>();// array list communal pile
-		private Player roundWinner;
-		private int numberOfPlayers;
-		private Player humanPlayer=null;
-		private int chosenCategory;
-		private String filePath;
 		private Card winningCard=null;
-		private boolean gameFinished=false;
-		private Dealer dealer;
+		private Dealer dealer=null;
+		private Player humanPlayer=null;
+		private Player roundWinner=null;
+		private ArrayList<Player> players= new ArrayList<Player>();
+		private ArrayList<Card> communalPile = new ArrayList<Card>();// array list communal pile
+		private String filePath;
+		private int numberOfPlayers,numberOfRounds,numberOfDraws,chosenCategory, initialDeckSize;
+		private boolean gameFinished, draw;
+		
 		
 		public Game(int numberOfPlayers,String filePath) {
 			this.numberOfPlayers=numberOfPlayers;
 			this.filePath=filePath;
-			this.numberOfRounds=0;
-			this.numberOfDraws=0;
-			this.humanPlayer= new Player("You", true);
-			this.roundWinner=humanPlayer;
-			this.players.add(humanPlayer);
+			resetGame(this.numberOfPlayers);
+		}
+		public void resetGame(int numberOfPlayers) {
+			numberOfRounds=0;
+			numberOfDraws=0;
+			gameFinished=false;
+			draw=false;
+			players.clear();
 			addPlayers(numberOfPlayers-1); //-1 because this should be the total number of players and we're adding AIs
 			deal();
+		}
+		public void addPlayers(int amount) { //adds a number of AIs to the players list
+			humanPlayer= new Player("You", true);
+			players.add(humanPlayer);
+			roundWinner=humanPlayer;
+			for(int i=0;i<amount;i++) {
+
+				players.add(new Player(String.format("AI Player %d", i+1), false));
+				
+			}
+		}
+		public void deal() { //creates a Dealer who splits the cards amongst the players
+			this.dealer=new Dealer(this);
+			dealer.createCards(filePath);
+			initialDeckSize=dealer.getDeckSize();
+			System.out.println(initialDeckSize);
+			dealer.dealCards();
 		}
 
 		
@@ -35,15 +52,20 @@ public class Game {
  */
 		public void compareCards() {  
 			Card[] roundCards=new Card[players.size()];
+			
 			for (int i=0; i<players.size();i++) {  //get the cards from the players' decks
-				roundCards[i]=players.get(i).getDeck().get(0);
-				players.get(i).getDeck().remove(0);
+				if(players.get(i).isActive()) {
+					roundCards[i]=players.get(i).getDeck().get(0);
+					players.get(i).getDeck().remove(0);
+				}
 			}
 			
 			int max=0; //used to hold the max value for the particular category that a card has 
 			int winnersIndex=0; //the winning player's index number in the list
 			int winnerCount=0; //used to differentiate between a draw and a win
+			
 			for (int i=0; i<roundCards.length;i++) {	//used to compare the value of the cards for the attribute
+				if(roundCards[i] instanceof Card) {
 				if (roundCards[i].getDescription()[chosenCategory]>max) { //if it's bigger it is assigned as the new max 
 					max=roundCards[i].getDescription()[chosenCategory];
 					winnersIndex=i; //used to address the winning player later 
@@ -51,24 +73,33 @@ public class Game {
 				}else if(roundCards[i].getDescription()[chosenCategory]==max) {
 					winnerCount++; //two cards have the same value (will indicate a draw)
 				}
-			}	
+			}
+			}
 			if(winnerCount>1) { //two cards had the same top value - a draw
-				this.numberOfDraws++;
+				numberOfDraws++;
+				draw=true;
 				for(int j=0; j<roundCards.length;j++) {
-					this.communalPile.add(roundCards[j]); //the cards are added to the communal pile
-				}	
+					if(roundCards[j] instanceof Card) {
+					communalPile.add(roundCards[j]); //the cards are added to the communal pile
+				
+					}
+				}
 			}
 			else if (winnerCount==1) { //if there is only 1 max value - a winner
 				for (int i=0;i<roundCards.length;i++) { 
+					if(roundCards[i] instanceof Card) {
 					players.get(winnersIndex).addCardToDeck(roundCards[i]); //add the cards to his deck
 					}
-				this.roundWinner=players.get(winnersIndex);
-				this.winningCard=roundCards[winnersIndex];
+				}
+				players.get(winnersIndex).incrementNumberOfRoundsWon();
+				draw=false;
+				roundWinner=players.get(winnersIndex);
+				winningCard=roundCards[winnersIndex];
 				if(!this.communalPile.isEmpty()) { //in case of a previous draw
-					for(int i=0;i<this.communalPile.size();i++) { // these cards are also added to his deck
-					players.get(winnersIndex).addCardToDeck(this.communalPile.get(i));
+					for(int i=0;i<communalPile.size();i++) { // these cards are also added to his deck
+					players.get(winnersIndex).addCardToDeck(communalPile.get(i));
 					}
-					this.communalPile.clear(); //empty the communalPile
+					communalPile.clear(); //empty the communalPile
 				}
 			}	
 		}
@@ -79,44 +110,45 @@ public class Game {
 		 */
 		public void nextRound() {
 			numberOfRounds++;
-			
-			
 			if (!roundWinner.isHuman()) { //the roundWinner is not human so the AI sets the chosenCategory
 				int max=0;
 				for (int i = 0; i < roundWinner.getDeck().get(0).getDescription().length; i++) { 
 			        if (roundWinner.getDeck().get(0).getDescription()[i] > max ) { //finds the highest member of the members of the categories on the card of the previous round's winner
 			             max=roundWinner.getDeck().get(0).getDescription()[i];
-			             this.chosenCategory=i; //sets that as the chosen category for the cards to be compared
+			             chosenCategory=i; //sets that as the chosen category for the cards to be compared
 			        }
 					
 				}
 			}
 		}
-		public void addPlayers(int amount) { //adds a number of AIs to the players list
-			for(int i=0;i<amount;i++) {
-
-				players.add(new Player(String.format("AI%d", i+1), false));
-				
+		
+		public void loserCheck() {
+			
+			for(int i=0;i<players.size();i++) {
+				if(players.get(i).getDeck().size()==0) {
+				players.get(i).setActive(false);
+				}
 			}
 		}
 		
-		public void deal() { //creates a Dealer who splits the cards amongst the players
-			this.dealer=new Dealer(this);
-			dealer.createCards(this.filePath);
-			dealer.dealCards();
-		}
 		public boolean hasGameEnded() {
+			
 			for(int i=0; i < players.size(); i++) {
-				if(players.get(i).getDeck().size() == this.dealer.getDeck().size()) {
-					this.gameFinished = true;
+				if(players.get(i).getDeck().size() == initialDeckSize) {
+					gameFinished = true;
+					
 				}
 			}
-			return this.gameFinished;
+			return gameFinished;
 		}
+		
 		public Player getHumanPlayer() {
 			return humanPlayer;
 		}
-
+		
+		public Card getWinningCard() {
+			return winningCard;
+		}
 		public Player getRoundWinner() {
 			return roundWinner;
 		}
@@ -128,7 +160,15 @@ public class Game {
 		public ArrayList<Player> getPlayers() {
 			return players;
 		}
+		
+		
 
+		public boolean isDraw() {
+			return draw;
+		}
+		public int getNumberOfPlayers() {
+			return numberOfPlayers;
+		}
 		public int getNumberOfDraws() {
 			return numberOfDraws;
 		}

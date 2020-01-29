@@ -7,6 +7,8 @@ public class Player {
 	private ArrayList<Card> deck = new ArrayList<Card>();	// 
 	private boolean isWinner = false;
 	private boolean isHuman=false;
+	private int numberOfRoundsWon=0;
+	private boolean active=true;
 	
 	public Player(String name,boolean isHuman) {
 		this.name=name;
@@ -21,6 +23,15 @@ public class Player {
 		deck.add(card);
 	}
 	
+	public int getNumberOfRoundsWon() {
+		return numberOfRoundsWon;
+	}
+
+	public void incrementNumberOfRoundsWon() {
+		
+		numberOfRoundsWon++;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -35,6 +46,14 @@ public class Player {
 
 	public void setWinner(boolean isWinner) {
 		this.isWinner = isWinner;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 	
 	
