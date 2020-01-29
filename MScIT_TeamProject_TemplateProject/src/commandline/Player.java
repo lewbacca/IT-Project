@@ -1,3 +1,5 @@
+package commandline;
+
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -7,6 +9,7 @@ public class Player {
 	private ArrayList<Card> deck = new ArrayList<Card>();	// 
 	private boolean isWinner = false;
 	private boolean isHuman=false;
+	private boolean active = true;
 	private int numberOfRoundsWon=0;
 	
 	public Player(String name,boolean isHuman) {
@@ -44,6 +47,12 @@ public class Player {
 	public void setWinner(boolean isWinner) {
 		this.isWinner = isWinner;
 	}
+	public boolean isActive() {
+		return active;
+	}
 	
+	public void setActive(boolean active) {
+		this.active=active;
+	}
 	
 }

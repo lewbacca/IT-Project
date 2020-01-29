@@ -12,23 +12,21 @@ public class TopTrumpsCLIApplication {
 	 */
 	public static void main(String[] args) {
 
-		boolean writeGameLogsToFile = false; // Should we write game logs to file?
-		if (args[0].equalsIgnoreCase("true")) writeGameLogsToFile=true; // Command line selection
+		//boolean writeGameLogsToFile = false; // Should we write game logs to file?
+		//if (args[0].equalsIgnoreCase("true")) writeGameLogsToFile=true; // Command line selection
 		
 		// State
 		boolean userWantsToQuit = false; // flag to check whether the user wants to quit the application
 		
 		// Loop until the user wants to exit the game
 		while (!userWantsToQuit) {
-
-			// ----------------------------------------------------
-			// Add your game logic here based on the requirements
-			// ----------------------------------------------------
+			Game game=new Game(5,"StarCitizenDeck.txt");
+			Controller controller=new Controller(game);
 			
 			userWantsToQuit=true; // use this when the user wants to exit the game
 			
 		}
-
+		
 
 	}
 

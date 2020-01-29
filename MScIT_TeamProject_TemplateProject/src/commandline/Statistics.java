@@ -1,3 +1,4 @@
+package commandline;
 
 public class Statistics {
 	private Database gamesDatabase;
