@@ -45,7 +45,6 @@ public class TopTrumps {
 			String[] commandArgs = {String.valueOf(printTestLog)};
 			TopTrumpsCLIApplication.main(commandArgs);
 		}
-		Database database=new Database();
-		database.connect();
+		
 		}
 }

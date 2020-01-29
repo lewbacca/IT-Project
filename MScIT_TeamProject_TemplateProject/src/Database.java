@@ -42,9 +42,9 @@ public class Database {
 	
 	public void updateDatabase() {
 		gameNumber++;
-		humanWin=game.getPlayer().isWinner();
-		numberOfDraws=game.gethowManyDraws();
-		rounds=game.gethowManyRounds();
+		humanWin=game.getHumanPlayer().isWinner();
+		numberOfDraws=game.getNumberOfDraws();
+		rounds=game.getNumberOfRounds();
 		if (connection!=null) {
 			try {
 				stat=connection.createStatement();

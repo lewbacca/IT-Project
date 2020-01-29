@@ -1,4 +1,3 @@
-
 public class Statistics {
 	private Database gamesDatabase;
 	private int totalGames, gamesWonByHuman, gamesWonByCom, longestGame;
@@ -8,7 +7,7 @@ public class Statistics {
 		this.gamesDatabase=gamesDatabase;
 	}
 	
-	public void Stats(){
+	public void stats(){
 		gamesDatabase.connectDatabase();
 		gamesDatabase.updateDatabase();
 		totalGames=gamesDatabase.totalGames();
@@ -28,7 +27,7 @@ public class Statistics {
 	public int getComWins() {
 		return gamesWonByCom;
 	}
-	public int getLongetsGame() {
+	public int getLongestGame() {
 		return longestGame;
 	}
 	public double getAverageDraws() {
