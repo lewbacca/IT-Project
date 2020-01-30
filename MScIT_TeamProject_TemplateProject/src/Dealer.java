@@ -10,10 +10,49 @@ public class Dealer {
 		this.game=game;
 	}
 	
-	public void createCards(String filePath) { //reads the txt file and makes every line into a new Card object, stores it in deck
-		
-	initialDeckSize=deck.size();
+	public void createCards(String filePath) {
+			s = convertString( filePath );
+			cards = s.split("\\s");
+			cardAttributes();
 	}
+	    
+		// Storing card attributes to their respective arrays
+	public void cardAttributes() {
+		int j=0;
+		
+		for(int i=6;i<cards.length;i++) {
+			description[j] = cards[i];
+			size[j] = Integer.parseInt(cards[++i]);
+			speed[j] = Integer.parseInt(cards[++i]);
+			range[j] = Integer.parseInt(cards[++i]);
+			firepower[j] = Integer.parseInt(cards[++i]);
+			cargo[j] = Integer.parseInt(cards[++i]);
+			j++;
+		}
+			
+			for(int i=0;i<cardsObjects.length;i++) {
+				cardsObjects[i] = new Card(description[i],size[i],speed[i],range[i],firepower[i],cargo[i]);
+			}
+			
+			for(int i=0;i<cardsObjects.length;i++)
+				deck.add(cardsObjects[i]);
+		}
+			
+		// dealCards(): Distributes Cards
+		
+	
+		//Read file content into string with - Files.readAllBytes(Path path)
+	private static String convertString(String filePath) {
+		String content = "";
+        	try{
+            	content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
+        	} 
+        	catch (IOException e){
+            	e.printStackTrace();
+        	}
+        	return content;
+		}
+
 	
 	public void dealCards(){ //takes deck and distributes the cards randomly to the players, 1 random card at a time for player 1 to 5  
 		while (!deck.isEmpty())
