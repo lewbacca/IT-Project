@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Controller {
-	private Game game=null;
-	private View view=null;
+	private Game game;
 	private Scanner sc=null;
-	private Statistics statistics=null;
 	private Database database=null;
+	private Statistics statistics=null;
+	private View view;
 	
 	public Controller(Game game){
 		this.game=game;
@@ -16,6 +16,7 @@ public class Controller {
 		view.startMenu();
 		firstChoice(sc.nextInt());
 	}
+	
 	public void play() {
 		game.resetGame(game.getNumberOfPlayers());
 		while(!game.hasGameEnded()) {
@@ -29,19 +30,17 @@ public class Controller {
 			game.compareCards();
 			view.roundViewAfterSelectingCategory();
 			game.loserCheck();
-//			view.whoLost();
 		}
 		statistics.stats();
 		view.gameEnd();
 		view.startMenu();
 		firstChoice(sc.nextInt());
-		
 	}
+	
 	public void showStats() {
 		view.showStatistics();
 		view.startMenu();
 		firstChoice(sc.nextInt());
-		
 	}
 	public void firstChoice(int input) {
 		sc.nextLine();
@@ -54,6 +53,4 @@ public class Controller {
 	public Statistics getStatistics() {
 		return statistics;
 	}
-	
-	
 }

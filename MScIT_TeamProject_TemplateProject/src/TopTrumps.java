@@ -1,10 +1,6 @@
 import java.sql.*;
-
 import commandline.TopTrumpsCLIApplication;
-
 import online.TopTrumpsOnlineApplication;
-
-
 
 public class TopTrumps {
 
@@ -44,7 +40,8 @@ public class TopTrumps {
 			// Start the command line application
 			String[] commandArgs = {String.valueOf(printTestLog)};
 			TopTrumpsCLIApplication.main(commandArgs);
-		}
+			}
 		
 		}
 }
+

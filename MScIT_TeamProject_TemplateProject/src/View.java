@@ -1,3 +1,4 @@
+
 public class View {
 	private Game game;
 	private Controller controller;
@@ -5,11 +6,10 @@ public class View {
 	public View(Game game, Controller controller) {
 		this.game = game;
 		this.controller = controller;
-		
 	}
 	
 	public void startMenu() {
-		System.out.println("\nDo you want to see past results or play a game?\r\n" + 
+		System.out.println("Do you want to see past results or play a game?\r\n" + 
 				"   1: Print Game Statistics\r\n" + 
 				"   2: Play game\r\n" + 
 				"Enter the number for your selection: ");
@@ -17,37 +17,34 @@ public class View {
 	
 	public void roundViewBeforeSelectingCategory() {
 				
-		System.out.println("\nRound " + game.getNumberOfRounds());
+		System.out.println("Round " + game.getNumberOfRounds());
 		
-		if(game.getPlayers().get(0).isActive()) {
 		System.out.println("Round "+ game.getNumberOfRounds()+": You drew :"+ game.getPlayers().get(0).getDeck().get(0).toString());
 		
-		System.out.println("You have " + game.getPlayers().get(0).getDeck().size() + " cards left in your deck!");
-		}
+		System.out.println("You have " + game.getRoundWinner().getDeck().get(0).getName() + " cards left in your deck!");
 	}
 	
 	public void roundViewWhileSelectingCategory() {
-		System.out.println("\nIt is your turn to select a category, the categories are:\r\n" + 
-				"   1: Size\r\n" + 
-				"   2: Speed\r\n" + 
-				"   3: Range\r\n" + 
-				"   4: Firepower\r\n" + 
-				"   5: Cargo\r\n" + 
+		System.out.println("It is your turn to select a category, the categories are:\r\n" + 
+				"   1: height\r\n" + 
+				"   2: weight\r\n" + 
+				"   3: length\r\n" + 
+				"   4: ferocity\r\n" + 
+				"   5: intelligence\r\n" + 
 				"Enter the number for your attribute: ");
 	}
 	
 	public void roundViewAfterSelectingCategory() {
 		
-		if(!game.isDraw()) {
-		System.out.println("\nRound " + game.getNumberOfRounds() + ": " + game.getRoundWinner().getName() +" won this round.");
-		System.out.println("The winning card was '" + game.getWinningCard().getName()+ "':\n " + addArrowToCategory(game.getChosenCategory()));
-		}else 
-			System.out.println("It's a draw. \nThere are " + game.getCommunalPile().size() + " cards in the communal pile");
+		
+		System.out.println("Round " + game.getNumberOfRounds() + ": " + game.getRoundWinner() +" won this round.");
+		
+		System.out.println("The winning card was '" + game.getWinningCard().getName() + "':\n " + addArrowToCategory(game.getChosenCategory()));
+
 	}
 	
-	
 	public String addArrowToCategory(int categoryNumber) {
-		Card winningCard = game.getWinningCard();
+		Card winningCard = game.getRoundWinner().getDeck().get(0);
 		
 		String arrow = "  <---";
 		
@@ -69,7 +66,7 @@ public class View {
 		for (int i=0; i<game.getNumberOfPlayers();i++) {
 			playerScores+="\n"+game.getPlayers().get(i).getName()+": "+game.getPlayers().get(i).getNumberOfRoundsWon();
 		}
-		System.out.print("\n Game End:"
+		System.out.print(" Game End:"
 				+ "\n The overall winner was " + game.getRoundWinner().getName()
 				+ "\nScores:"+playerScores);
 	}
@@ -81,13 +78,5 @@ public class View {
 				+ "\n Number of AI Wins: " + controller.getStatistics().getComWins()
 				+ "\n Average Number of Draws: " + controller.getStatistics().getAverageDraws()
 				+ "\n Longest Game: " + controller.getStatistics().getLongestGame());
-		
 	}
-//	public void whoLost() {
-//		for(int i=0;i<game.getPlayers().size();i++) {
-//			if(!game.getPlayers().get(i).isActive()) {
-//				System.out.println(game.getPlayers().get(i).getName()+ " has lost.");
-//			}
-//		}
-//	}
 }

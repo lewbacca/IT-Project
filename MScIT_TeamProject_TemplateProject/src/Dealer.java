@@ -1,38 +1,50 @@
-import java.util.ArrayList;
-import java.util.Random;
-
-public class Dealer {
-	private Game game;
-	private ArrayList<Card> deck=new ArrayList<Card>();
-	private int initialDeckSize;
-	
-	public Dealer(Game game) {
-		this.game=game;
-	}
-	
-	public void createCards(String filePath) {
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.*;
+ 
+public class Dealer
+{
+		private Game game;
+		private String[] description = new String[40];
+		private String[] cards = new String[40];
+		private String s;
+		private int[] size = new int[40];
+		private int[] speed = new int[40];
+		private int[] range = new int[40];
+		private int[] firepower = new int[40];
+		private int[] cargo = new int[40];
+		private	Card[] cardsObjects = new Card[40];
+		private	ArrayList<Card> deck = new ArrayList<Card>();
+		
+        //Constructor
+		public Dealer(Game game) {
+			this.game = game;
+		}
+		
+		//String filePath = "StarCitizenDeck.txt";
+		public void createCards(String filePath) {
 			s = convertString( filePath );
 			cards = s.split("\\s");
 			cardAttributes();
-	}
-	    
-		// Storing card attributes to their respective arrays
-	public void cardAttributes() {
-		int j=0;
-		
-		for(int i=6;i<cards.length;i++) {
-			description[j] = cards[i];
-			size[j] = Integer.parseInt(cards[++i]);
-			speed[j] = Integer.parseInt(cards[++i]);
-			range[j] = Integer.parseInt(cards[++i]);
-			firepower[j] = Integer.parseInt(cards[++i]);
-			cargo[j] = Integer.parseInt(cards[++i]);
-			j++;
 		}
-			
-			for(int i=0;i<cardsObjects.length;i++) {
-				cardsObjects[i] = new Card(description[i],size[i],speed[i],range[i],firepower[i],cargo[i]);
+		
+		// Storing card attributes to their respective arrays
+		public void cardAttributes() {
+			int j=0;
+		
+			for(int i=6;i<cards.length;i++) {
+				description[j] = cards[i];
+				size[j] = Integer.parseInt(cards[++i]);
+				speed[j] = Integer.parseInt(cards[++i]);
+				range[j] = Integer.parseInt(cards[++i]);
+				firepower[j] = Integer.parseInt(cards[++i]);
+				cargo[j] = Integer.parseInt(cards[++i]);
+				j++;
 			}
+			
+			for(int i=0;i<cardsObjects.length;i++) 
+				cardsObjects[i] = new Card(description[i],size[i],speed[i],range[i],firepower[i],cargo[i]);
 			
 			for(int i=0;i<cardsObjects.length;i++)
 				deck.add(cardsObjects[i]);
@@ -42,15 +54,18 @@ public class Dealer {
 		
 	
 		//Read file content into string with - Files.readAllBytes(Path path)
-	private static String convertString(String filePath) {
-		String content = "";
-        	try{
-            	content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
+		private static String convertString(String filePath) 
+		{
+			String content = "";
+        	try
+        	{
+            		content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
         	} 
-        	catch (IOException e){
-            	e.printStackTrace();
+        	catch (IOException e) 
+        	{
+            		e.printStackTrace();
         	}
-        	return content;
+        		return content;
 		}
 
 	
@@ -60,17 +75,19 @@ public class Dealer {
 			Random randomNumber= new Random();
 			int random=randomNumber.nextInt(deck.size());
 			game.getPlayers().get(i).addCardToDeck(deck.get(random));
-			deck.remove(random);
+			this.deck.remove(random);
 			if (deck.isEmpty()) {
 				break;
 			}
 		}
 	}
+	
 
 	public ArrayList<Card> getDeck() {
 		return deck;
 	}
-	public int getDeckSize(){
+	public int getDeckSize() {
 		return deck.size();
 	}
 }
+

@@ -1,3 +1,4 @@
+
 public class Statistics {
 	private Database gamesDatabase;
 	private int totalGames, gamesWonByHuman, gamesWonByCom, longestGame;

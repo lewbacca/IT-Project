@@ -25,7 +25,7 @@ public class Database {
 	
 	public void connectDatabase() {
 		try {
-			Class.forName("org.postgresql.Driver");
+			Class.forName(JDBC_DRIVER);
 			}catch (Exception e) {
 				System.out.println("Could not load class org.postgresql.Driver");
 				e.printStackTrace();
@@ -144,3 +144,4 @@ public class Database {
 		}
 	}
 }
+
