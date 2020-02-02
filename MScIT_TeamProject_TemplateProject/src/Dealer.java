@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -7,8 +6,8 @@ import java.util.*;
 public class Dealer
 {
 		private Game game;
-		private String[] description = new String[50];
-		private String[] cards = new String[50];
+		private String[] description = new String[40];
+		private String[] cards = new String[40];
 		private String s;
 		private int[] size = new int[40];
 		private int[] speed = new int[40];
@@ -29,7 +28,7 @@ public class Dealer
 			cards = s.split("\\s");
 			cardAttributes();
 		}
-	    
+		
 		// Storing card attributes to their respective arrays
 		public void cardAttributes() {
 			int j=0;
@@ -91,3 +90,4 @@ public class Dealer
 		return deck.size();
 	}
 }
+

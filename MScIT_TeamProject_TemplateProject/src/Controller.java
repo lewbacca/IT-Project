@@ -13,6 +13,8 @@ public class Controller {
 		statistics=new Statistics(database);
 		view=new View(game, this);
 		sc=new Scanner(System.in);
+		view.startMenu();
+		firstChoice(sc.nextInt());
 	}
 	
 	public void play() {
@@ -27,6 +29,7 @@ public class Controller {
 			}
 			game.compareCards();
 			view.roundViewAfterSelectingCategory();
+			game.loserCheck();
 		}
 		statistics.stats();
 		view.gameEnd();
