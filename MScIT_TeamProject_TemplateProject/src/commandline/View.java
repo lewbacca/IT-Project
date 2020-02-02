@@ -36,7 +36,7 @@ public class View {
 		System.out.println("\nRound " + game.getNumberOfRounds() + ": " + game.getRoundWinner().getName() +" won this round.");
 		System.out.println("The winning card was '" + game.getWinningCard().getName()+ "':\n " + addArrowToCategory(game.getChosenCategory()));
 		}else 
-			System.out.println("It's a draw. \nThere are " + game.getCommunalPile().size() + "cards in the communal pile");
+			System.out.println("It's a draw. \nThere are " + game.getCommunalPile().size() + " cards in the communal pile");
 	}
 	public String addArrowToCategory(int categoryNumber) {
 		Card winningCard = game.getWinningCard();

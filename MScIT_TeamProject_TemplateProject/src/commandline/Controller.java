@@ -21,9 +21,6 @@ public class Controller {
 	public void play() {
 		game.resetGame(game.getNumberOfPlayers());
 		while(!game.hasGameEnded()) {
-			for (int i=0;i<game.getPlayers().size();i++) {
-				System.out.println(game.getPlayers().get(i).getDeck().size());
-			}
 			game.nextRound();
 			view.roundViewBeforeSelectingCategory();
 			if(game.getHumanPlayer().equals(game.getRoundWinner())) {

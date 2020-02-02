@@ -1,9 +1,12 @@
 package commandline;
 
 public class Statistics {
-	private Database gamesDatabase;
-	private int totalGames, gamesWonByHuman, gamesWonByCom, longestGame;
-	private double averageDraws;
+	private Database gamesDatabase=null;
+	private int totalGames=0;
+	private int gamesWonByHuman=0;
+	private int gamesWonByCom=0; 
+	private int longestGame=0;
+	private double averageDraws=0.0;
 	
 	public Statistics(Database gamesDatabase) {
 		this.gamesDatabase=gamesDatabase;

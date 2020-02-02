@@ -39,7 +39,7 @@ public class Game {
 		public void loserCheck() {
 			for(int i=0;i<players.size();i++) {
 				if(players.get(i).getDeck().size()==0) {
-				players.get(i).setActive(false);
+					players.get(i).setActive(false);
 				}
 			}
 		}
@@ -106,7 +106,7 @@ public class Game {
 				winningCard=roundCards[winnersIndex];
 				if(!this.communalPile.isEmpty()) { //in case of a previous draw
 					for(int i=0;i<communalPile.size();i++) { // these cards are also added to his deck
-					players.get(winnersIndex).addCardToDeck(communalPile.get(i));
+						players.get(winnersIndex).addCardToDeck(communalPile.get(i));
 					}
 					communalPile.clear(); //empty the communalPile
 				}
