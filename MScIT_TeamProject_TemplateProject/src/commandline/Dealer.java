@@ -10,7 +10,7 @@ public class Dealer
 		private Game game;
 		private String[] description = new String[40];
 		private String[] cards = new String[40];
-		private String s;
+		private String s, filePath;
 		private int[] size = new int[40];
 		private int[] speed = new int[40];
 		private int[] range = new int[40];
@@ -20,8 +20,10 @@ public class Dealer
 		private	ArrayList<Card> deck = new ArrayList<Card>();
 		
         //Constructor
-		public Dealer(Game game) {
+		public Dealer(Game game,String filePath) {
 			this.game = game;
+			this.filePath=filePath;
+			
 		}
 		
 		//String filePath = "StarCitizenDeck.txt";

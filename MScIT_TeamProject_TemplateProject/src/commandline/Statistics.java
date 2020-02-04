@@ -14,27 +14,37 @@ public class Statistics {
 	
 	public void stats(){
 		gamesDatabase.connectDatabase();
-		gamesDatabase.updateDatabase();
 		totalGames=gamesDatabase.totalGames();
 		gamesWonByHuman=gamesDatabase.humanWins();
 		gamesWonByCom=gamesDatabase.comWins();
 		longestGame=gamesDatabase.longestGame();
 		averageDraws=gamesDatabase.aveDrawsPerGame();
 		gamesDatabase.closeDatabase();
+		
+	}
+	
+	public void updateStats() {
+		gamesDatabase.connectDatabase();
+		gamesDatabase.updateDatabase();
+		gamesDatabase.closeDatabase();
 	}
 	
 	public int getTotalGames() {
 		return totalGames;
 	}
+	
 	public int getHumanWins() {
 		return gamesWonByHuman;
 	}
+	
 	public int getComWins() {
 		return gamesWonByCom;
 	}
+	
 	public int getLongestGame() {
 		return longestGame;
 	}
+	
 	public double getAverageDraws() {
 		return averageDraws;
 	}

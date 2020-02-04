@@ -1,0 +1,6752 @@
+----------------------------
+---------  Log File  -------
+----------------------------
+
+----------
+INITIAL DECK: 
+
+----------
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hawk
+Merchantman
+Vanguard
+Idris
+Orion
+350r
+Avenger
+Carrack
+
+----------
+Player: AI Player1
+Hurricane
+m50
+Constellation
+Idris
+Hornet
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+Sabre
+Sabre
+350r
+Idris
+Merchantman
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+m50
+Avenger
+Hurricane
+Hornet
+Sabre
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Constellation
+Avenger
+Hawk
+Hawk
+Orion
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 4
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+Card Value: 5
+----------
+Player: 
+AI Player3
+Card Value: 2
+----------
+Player: 
+AI Player4
+Card Value: 3
+----------
+
+----------
+HAND: 
+
+----------
+
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Merchantman
+Vanguard
+Idris
+Orion
+350r
+Avenger
+Carrack
+
+----------
+Player: AI Player1
+m50
+Constellation
+Idris
+Hornet
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+Sabre
+350r
+Idris
+Merchantman
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+Avenger
+Hurricane
+Hornet
+Sabre
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Avenger
+Hawk
+Hawk
+Orion
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 5
+Player: 
+You
+Card Value: 8
+----------
+Player: 
+AI Player1
+Card Value: 0
+----------
+Player: 
+AI Player2
+Card Value: 0
+----------
+Player: 
+AI Player3
+Card Value: 2
+----------
+Player: 
+AI Player4
+Card Value: 2
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Vanguard
+Idris
+Orion
+350r
+Avenger
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Constellation
+Idris
+Hornet
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+350r
+Idris
+Merchantman
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+Hurricane
+Hornet
+Sabre
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Hawk
+Hawk
+Orion
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 5
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+Card Value: 3
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+Card Value: 4
+----------
+
+----------
+HAND: 
+
+----------
+
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Idris
+Orion
+350r
+Avenger
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Idris
+Hornet
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+Idris
+Merchantman
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+Hornet
+Sabre
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Hawk
+Orion
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 10
+----------
+Player: 
+AI Player3
+Card Value: 4
+----------
+Player: 
+AI Player4
+Card Value: 4
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Idris
+Idris
+Hornet
+Hawk
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Orion
+350r
+Avenger
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Hornet
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+Merchantman
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+Sabre
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Orion
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+Card Value: 7
+----------
+Player: 
+AI Player3
+Card Value: 2
+----------
+Player: 
+AI Player4
+Card Value: 10
+----------
+
+----------
+HAND: 
+
+----------
+
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+350r
+Avenger
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+m50
+Orion
+Carrack
+
+----------
+Player: AI Player2
+Vanguard
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+Constellation
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Carrack
+Vanguard
+Hurricane
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 9
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 4
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+Card Value: 2
+----------
+
+----------
+HAND: 
+
+----------
+
+350r
+m50
+Vanguard
+Constellation
+Carrack
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Avenger
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Orion
+Carrack
+350r
+m50
+Vanguard
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+
+----------
+Player: AI Player2
+Avenger
+Hornet
+
+----------
+Player: AI Player3
+350r
+Merchantman
+
+----------
+Player: AI Player4
+Vanguard
+Hurricane
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 2
+----------
+Player: 
+AI Player3
+Card Value: 1
+----------
+Player: 
+AI Player4
+Card Value: 3
+----------
+
+----------
+HAND: 
+
+----------
+
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Carrack
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Carrack
+350r
+m50
+Vanguard
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+
+----------
+Player: AI Player2
+Hornet
+
+----------
+Player: AI Player3
+Merchantman
+
+----------
+Player: AI Player4
+Hurricane
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 3
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+Card Value: 3
+----------
+
+----------
+HAND: 
+
+----------
+
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Merchantman
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+350r
+m50
+Vanguard
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+
+----------
+Player: AI Player2
+
+----------
+Player: AI Player3
+
+----------
+Player: AI Player4
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 3
+----------
+Player: 
+AI Player1
+Card Value: 9
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+m50
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+m50
+Vanguard
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+m50
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Sabre
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Vanguard
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+m50
+m50
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Avenger
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Constellation
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 4
+----------
+Player: 
+AI Player1
+Card Value: 7
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Avenger
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Avenger
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Carrack
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 4
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Avenger
+Carrack
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hawk
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Vanguard
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hawk
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hurricane
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+Constellation
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 3
+----------
+Player: 
+AI Player1
+Card Value: 7
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Sabre
+m50
+Constellation
+
+----------
+Player: AI Player1
+350r
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 7
+----------
+Player: 
+AI Player1
+Card Value: 9
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+m50
+Constellation
+
+----------
+Player: AI Player1
+Hurricane
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Hurricane
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Constellation
+m50
+Hurricane
+
+----------
+Player: AI Player1
+Hawk
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 7
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Constellation
+Hawk
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+m50
+Hurricane
+Constellation
+Hawk
+
+----------
+Player: AI Player1
+Idris
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 10
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hurricane
+Constellation
+Hawk
+m50
+Idris
+
+----------
+Player: AI Player1
+Idris
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 5
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Constellation
+Hawk
+m50
+Idris
+
+----------
+Player: AI Player1
+Idris
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+Hurricane
+Idris
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 3
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Constellation
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hawk
+m50
+Idris
+
+----------
+Player: AI Player1
+Hornet
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+Hurricane
+Idris
+Constellation
+Idris
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 3
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hawk
+Hornet
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+m50
+Idris
+
+----------
+Player: AI Player1
+Hawk
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+Hurricane
+Idris
+Constellation
+Idris
+Hawk
+Hornet
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 4
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Hawk
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Idris
+
+----------
+Player: AI Player1
+Orion
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+Hurricane
+Idris
+Constellation
+Idris
+Hawk
+Hornet
+m50
+Hawk
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+Card Value: 8
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Orion
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+
+----------
+Player: AI Player1
+Hornet
+Merchantman
+Sabre
+Orion
+Avenger
+Orion
+Avenger
+350r
+Vanguard
+Merchantman
+350r
+Carrack
+Carrack
+Hornet
+Merchantman
+Hurricane
+Sabre
+Vanguard
+m50
+m50
+Avenger
+Constellation
+Avenger
+Carrack
+Hawk
+Vanguard
+Hurricane
+Constellation
+Sabre
+350r
+Hurricane
+Idris
+Constellation
+Idris
+Hawk
+Hornet
+m50
+Hawk
+Idris
+Orion
+
+----------
+
+----------
+WINNER: 
+
+----------
+AI Player1
+----------
+INITIAL DECK: 
+
+----------
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'350r':
+ Size: 1
+ Speed: 9
+ Range: 2
+ Firepower: 3
+ Cargo: 0
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+'Carrack':
+ Size: 6
+ Speed: 2
+ Range: 10
+ Firepower: 4
+ Cargo: 6
+
+'Constellation':
+ Size: 4
+ Speed: 5
+ Range: 7
+ Firepower: 3
+ Cargo: 4
+
+'Hawk':
+ Size: 1
+ Speed: 3
+ Range: 2
+ Firepower: 4
+ Cargo: 0
+
+'Hornet':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 4
+ Cargo: 1
+
+'Hurricane':
+ Size: 2
+ Speed: 5
+ Range: 3
+ Firepower: 5
+ Cargo: 0
+
+'Idris':
+ Size: 8
+ Speed: 2
+ Range: 7
+ Firepower: 10
+ Cargo: 6
+
+'m50':
+ Size: 1
+ Speed: 10
+ Range: 2
+ Firepower: 2
+ Cargo: 0
+
+'Merchantman':
+ Size: 7
+ Speed: 3
+ Range: 5
+ Firepower: 6
+ Cargo: 8
+
+'Orion':
+ Size: 10
+ Speed: 1
+ Range: 6
+ Firepower: 2
+ Cargo: 9
+
+'Sabre':
+ Size: 2
+ Speed: 7
+ Range: 2
+ Firepower: 5
+ Cargo: 0
+
+'Vanguard':
+ Size: 3
+ Speed: 4
+ Range: 5
+ Firepower: 5
+ Cargo: 2
+
+'Avenger':
+ Size: 2
+ Speed: 5
+ Range: 4
+ Firepower: 3
+ Cargo: 2
+
+
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Sabre
+Idris
+m50
+350r
+Idris
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Orion
+Avenger
+Constellation
+m50
+Orion
+Orion
+Carrack
+Carrack
+
+----------
+Player: AI Player2
+Merchantman
+Carrack
+Avenger
+Hurricane
+Hornet
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+350r
+350r
+Hawk
+Hornet
+Hurricane
+Hawk
+Hawk
+Merchantman
+
+----------
+Player: AI Player4
+Constellation
+Vanguard
+m50
+Avenger
+Vanguard
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 7
+----------
+Player: 
+AI Player1
+Card Value: 1
+----------
+Player: 
+AI Player2
+Card Value: 3
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+Card Value: 5
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Idris
+m50
+350r
+Idris
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Avenger
+Constellation
+m50
+Orion
+Orion
+Carrack
+Carrack
+
+----------
+Player: AI Player2
+Carrack
+Avenger
+Hurricane
+Hornet
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+350r
+Hawk
+Hornet
+Hurricane
+Hawk
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+
+----------
+Player: AI Player4
+Vanguard
+m50
+Avenger
+Vanguard
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+Card Value: 2
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+Card Value: 4
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+m50
+350r
+Idris
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Constellation
+m50
+Orion
+Orion
+Carrack
+Carrack
+
+----------
+Player: AI Player2
+Avenger
+Hurricane
+Hornet
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+Hawk
+Hornet
+Hurricane
+Hawk
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+
+----------
+Player: AI Player4
+m50
+Avenger
+Vanguard
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+Card Value: 2
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+Card Value: 3
+----------
+Player: 
+AI Player3
+Card Value: 4
+----------
+Player: 
+AI Player4
+Card Value: 2
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Constellation
+Avenger
+Hawk
+m50
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+350r
+Idris
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+m50
+Orion
+Orion
+Carrack
+Carrack
+
+----------
+Player: AI Player2
+Hurricane
+Hornet
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+Hornet
+Hurricane
+Hawk
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+Avenger
+Vanguard
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+Card Value: 9
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 5
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+Card Value: 5
+----------
+
+----------
+HAND: 
+
+----------
+
+350r
+m50
+Hurricane
+Hornet
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Idris
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Orion
+Orion
+Carrack
+Carrack
+350r
+m50
+Hurricane
+Hornet
+Avenger
+
+----------
+Player: AI Player2
+Hornet
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+Hurricane
+Hawk
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+Vanguard
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+Card Value: 8
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 2
+----------
+Player: 
+AI Player3
+Card Value: 2
+----------
+Player: 
+AI Player4
+Card Value: 3
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Merchantman
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Orion
+Carrack
+Carrack
+350r
+m50
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+
+----------
+Player: AI Player2
+Avenger
+Idris
+Sabre
+
+----------
+Player: AI Player3
+Hawk
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+Hornet
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+Card Value: 7
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 2
+----------
+Player: 
+AI Player3
+Card Value: 1
+----------
+Player: 
+AI Player4
+Card Value: 2
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Hurricane
+Vanguard
+
+----------
+Player: AI Player1
+Carrack
+Carrack
+350r
+m50
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+
+----------
+Player: AI Player2
+Idris
+Sabre
+
+----------
+Player: AI Player3
+Hawk
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+Sabre
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 3
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 7
+----------
+Player: 
+AI Player3
+Card Value: 2
+----------
+Player: 
+AI Player4
+Card Value: 2
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+Vanguard
+
+----------
+Player: AI Player1
+Carrack
+350r
+m50
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+
+----------
+Player: AI Player2
+Sabre
+
+----------
+Player: AI Player3
+Merchantman
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+Card Value: 5
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+Card Value: 2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+Card Value: 7
+----------
+
+----------
+HAND: 
+
+----------
+
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: You
+
+----------
+Player: AI Player1
+350r
+m50
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+
+----------
+Player: AI Player2
+
+----------
+Player: AI Player3
+Sabre
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+Player: AI Player4
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 9
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 7
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+350r
+Sabre
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+m50
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+
+----------
+Player: AI Player3
+Orion
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 1
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Orion
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hurricane
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+
+----------
+Player: AI Player3
+Merchantman
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 3
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Merchantman
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hornet
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+350r
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hornet
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Avenger
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Constellation
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 4
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 7
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Avenger
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Idris
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Idris
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 10
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Orion
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Avenger
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Idris
+Idris
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 1
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Orion
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hornet
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Carrack
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hornet
+Carrack
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hurricane
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+350r
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Vanguard
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Vanguard
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Vanguard
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Merchantman
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+m50
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Vanguard
+Vanguard
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+m50
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Orion
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Constellation
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 6
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 7
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Orion
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Avenger
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Avenger
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Avenger
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hawk
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Hawk
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Avenger
+Avenger
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 4
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 4
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hawk
+Hawk
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hornet
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+m50
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Avenger
+Avenger
+Hawk
+Hawk
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hornet
+m50
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hurricane
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Hornet
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Hornet
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Carrack
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+350r
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Hurricane
+Hornet
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Carrack
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Idris
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Avenger
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Idris
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hawk
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Constellation
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 7
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hawk
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Sabre
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Orion
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 2
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+Orion
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Vanguard
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Avenger
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 4
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Vanguard
+Avenger
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Carrack
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Idris
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 4
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Carrack
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Sabre
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Idris
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 4
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+Idris
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Merchantman
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Hornet
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+Hornet
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Constellation
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Carrack
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 7
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Constellation
+Carrack
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+350r
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+
+----------
+Player: AI Player3
+Hurricane
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 9
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+350r
+Hurricane
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Sabre
+m50
+Orion
+Hurricane
+Merchantman
+350r
+Hurricane
+
+----------
+Player: AI Player3
+350r
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 7
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 9
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Sabre
+350r
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+m50
+Orion
+Hurricane
+Merchantman
+350r
+Hurricane
+
+----------
+Player: AI Player3
+Merchantman
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 5
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 0
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 8
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+m50
+Merchantman
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Orion
+Hurricane
+Merchantman
+350r
+Hurricane
+
+----------
+Player: AI Player3
+m50
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 2
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 1
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Orion
+m50
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hurricane
+Merchantman
+350r
+Hurricane
+
+----------
+Player: AI Player3
+Vanguard
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+Orion
+m50
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Merchantman
+350r
+Hurricane
+
+----------
+Player: AI Player3
+Vanguard
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+Orion
+m50
+Hurricane
+Vanguard
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 5
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 5
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Merchantman
+Vanguard
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+350r
+Hurricane
+
+----------
+Player: AI Player3
+Orion
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+Orion
+m50
+Hurricane
+Vanguard
+
+----------
+
+----------
+COMMUNAL PILE: 
+
+----------
+
+Merchantman
+Vanguard
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 1
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 1
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 10
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+350r
+Orion
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+Hurricane
+
+----------
+Player: AI Player3
+Constellation
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+Orion
+m50
+Hurricane
+Vanguard
+350r
+Orion
+Merchantman
+Vanguard
+
+----------
+
+----------
+CATEGORY: 
+
+----------
+   1: Size
+   2: Speed
+   3: Range
+   4: Firepower
+   5: Cargo
+Chosen Category: 3
+Player: 
+You
+----------
+Player: 
+AI Player1
+Card Value: 3
+----------
+Player: 
+AI Player2
+----------
+Player: 
+AI Player3
+Card Value: 7
+----------
+Player: 
+AI Player4
+----------
+
+----------
+HAND: 
+
+----------
+
+Hurricane
+Constellation
+----------
+
+----------
+PLAYERS DECK: 
+
+----------
+Player: AI Player1
+
+----------
+Player: AI Player3
+Hornet
+m50
+Avenger
+Avenger
+Hawk
+Hawk
+Carrack
+350r
+Hurricane
+Hornet
+Idris
+Avenger
+Hawk
+Constellation
+Sabre
+Orion
+Vanguard
+Avenger
+Carrack
+Idris
+Sabre
+Idris
+Merchantman
+Hornet
+Constellation
+Carrack
+Sabre
+350r
+m50
+Merchantman
+Orion
+m50
+Hurricane
+Vanguard
+350r
+Orion
+Merchantman
+Vanguard
+Hurricane
+Constellation
+
+----------
+
+----------
+WINNER: 
+
+----------
+AI Player3

@@ -1,8 +1,7 @@
 package commandline;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+
 
 public class Player {
 	private String name;
@@ -54,5 +53,6 @@ public class Player {
 	public void setActive(boolean active) {
 		this.active=active;
 	}
+	
 	
 }

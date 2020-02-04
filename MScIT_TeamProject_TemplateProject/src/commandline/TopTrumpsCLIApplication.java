@@ -22,7 +22,7 @@ public class TopTrumpsCLIApplication {
 		while (!userWantsToQuit) {
 			Game game=new Game(5,"StarCitizenDeck.txt");
 			Controller controller=new Controller(game);
-			
+			controller.play();
 			userWantsToQuit=true; // use this when the user wants to exit the game
 			
 		}
