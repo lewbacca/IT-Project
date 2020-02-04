@@ -14,11 +14,13 @@ public class Game {
 		private String filePath;
 		private int numberOfRounds, numberOfDraws, numberOfPlayers, chosenCategory, initialDeckSize;
 		private boolean gameFinished, draw;
-		
+		Card[] roundCards=null;
+		private Player gameWinner=null;
 		//constructor
 		public Game(int numberOfPlayers,String filePath) {
 			this.numberOfPlayers=numberOfPlayers;
 			this.filePath=filePath;
+			dealer=new Dealer(this,filePath);
 		}
 		
 /*
@@ -31,9 +33,11 @@ public class Game {
 			numberOfDraws=0;
 			gameFinished=false;
 			draw=false;
+			gameWinner=null;
 			players.clear();
 			addPlayers(numberOfPlayers-1); //-1 because this should be the total number of players and we're adding AIs
-			deal();
+			dealer.createCards(filePath);
+			
 		}
 		
 		public void loserCheck() {
@@ -51,19 +55,16 @@ public class Game {
 			roundWinner=humanPlayer;
 			for(int i=0;i<amount;i++) {
 				players.add(new Player(String.format("AI Player%d", i+1), false));
-				
 			}
 		}
 		
 		public void deal() { //creates a Dealer who splits the cards amongst the players
-			dealer=new Dealer(this);
-			dealer.createCards(filePath);
 			initialDeckSize=dealer.getDeckSize();
 			dealer.dealCards();
 		}
 		
 		public void compareCards() {  
-			Card[] roundCards=new Card[players.size()];
+			roundCards=new Card[players.size()];
 			for (int i=0; i<players.size();i++) {  //get the cards from the players' decks
 				if(players.get(i).isActive()) {
 					roundCards[i]=players.get(i).getDeck().get(0);
@@ -75,14 +76,14 @@ public class Game {
 			int winnerCount=0; //used to differentiate between a draw and a win
 			for (int i=0; i<roundCards.length;i++) {	//used to compare the value of the cards for the attribute
 				if(roundCards[i] instanceof Card) {
-				if (roundCards[i].getDescription()[chosenCategory]>max) { //if it's bigger it is assigned as the new max 
-					max=roundCards[i].getDescription()[chosenCategory];
-					winnersIndex=i; //used to address the winning player later 
-					winnerCount=1; //one winner only
-				}else if(roundCards[i].getDescription()[chosenCategory]==max) {
-					winnerCount++; //two cards have the same value (will indicate a draw)
+					if (roundCards[i].getDescription()[chosenCategory]>max) { //if it's bigger it is assigned as the new max 
+						max=roundCards[i].getDescription()[chosenCategory];
+						winnersIndex=i; //used to address the winning player later 
+						winnerCount=1; //one winner only
+					}else if(roundCards[i].getDescription()[chosenCategory]==max) {
+						winnerCount++; //two cards have the same value (will indicate a draw)
+					}
 				}
-			}
 			}
 			if(winnerCount>1) { //two cards had the same top value - a draw
 				numberOfDraws++;
@@ -134,6 +135,8 @@ public class Game {
 			for(int i=0; i < players.size(); i++) {
 				if(players.get(i).getDeck().size() == initialDeckSize) {
 					gameFinished = true;
+					players.get(i).setWinner(true);
+					gameWinner=players.get(i);
 				}
 			}
 			return gameFinished;
@@ -176,8 +179,8 @@ public class Game {
 			return communalPile;
 		}
 		
-		public void setChosenCategory(int chosenCategory) {
-			this.chosenCategory = chosenCategory;
+		public void setChosenCategory(int category) {
+			chosenCategory = category;
 		}
 		
 		public int getChosenCategory() {
@@ -185,6 +188,16 @@ public class Game {
 		}
 		public boolean isDraw() {
 			return draw;
+		}
+		
+		public Dealer getDealer() {
+			return dealer;
+		}
+		public Card[] getRoundCards() {
+			return roundCards;
+		}
+		public Player getGameWinner() {
+			return gameWinner;
 		}
 				
 }

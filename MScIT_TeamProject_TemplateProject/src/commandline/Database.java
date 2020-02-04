@@ -33,7 +33,6 @@ public class Database {
 				e.printStackTrace();
 				return;
 			}
-			System.out.println("PostgreSQL JDBC Driver found!");
 		try {
 			connection=DriverManager.getConnection(IP,username,password);
 		}catch(SQLException e) {
@@ -139,7 +138,9 @@ public class Database {
 	
 	public void closeDatabase() {
 		try {
-			stat.close();
+			if (!stat.isClosed()){
+				stat.close();
+			}
 			connection.close();
 		}catch(SQLException e) {
 			e.printStackTrace();

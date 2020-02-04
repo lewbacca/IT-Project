@@ -6,7 +6,7 @@ public class Card {
 
 	public Card(String name,int size,int speed, int range,int firepower,int cargo) {
 		this.name=name;
-		this.description=new int[] {size, speed, range, firepower, cargo};
+		description=new int[] {size, speed, range, firepower, cargo};
 	}
 
 	public int[] getDescription() {
