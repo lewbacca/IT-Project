@@ -9,6 +9,9 @@
     	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
 
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 		<!-- Optional Styling of the Website, for the demo I used Bootstrap (see https://getbootstrap.com/docs/4.0/getting-started/introduction/) -->
 		<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
     	<script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
@@ -22,11 +25,26 @@
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
-    	<div class="container">
+    	<div class="jumbotron text-center">
+    		<h1>Top Trumps Game</h1>
+    		<p>Select one of the two options.</p>
+
+    	</div>
 
 			<!-- Add your HTML Here -->
-		
+		<div class="container-fluid pt-3 text-center">
+			<a class="btn btn-dark text-center btn-lg" href="http://localhost:7777/toptrumps/game">Play Game</a>
+			<a class="btn btn-dark text-center btn-lg" href="http://localhost:7777/toptrumps/stats">View Statistics</a>
 		</div>
+			
+		
+
+		<!-- <div class="container pt-3">
+			<div class="row">
+				<button type="button" class="btn btn-primary">Play Game</button>
+				<button type="button" class="btn btn-primary">View Statistics</button>
+			</div>
+		</div> -->
 		
 		<script type="text/javascript">
 		
@@ -38,8 +56,9 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				// helloJSONList();
+				// helloWord("Student");
+				// alert("I'm working!");
 				
 			}
 			
@@ -114,7 +133,8 @@
 				// to do when the response arrives 
 				xhr.onload = function(e) {
  					var responseText = xhr.response; // the text of the response
-					alert(responseText); // lets produce an alert
+					// alert(responseText); // lets produce an alert
+					alert(1);
 				};
 				
 				// We have done everything we need to prepare the CORS request, so send it
