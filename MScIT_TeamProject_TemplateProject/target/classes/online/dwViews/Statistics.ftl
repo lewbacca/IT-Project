@@ -22,10 +22,20 @@
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
-    	<div class="container">
-
+    	<div class="jumbotron jumbotron-fluid text-center bg-dark text-white">
+    		<h1>Statistics of the Game</h1>
+    		
 			<!-- Add your HTML Here -->
 		
+		</div>
+
+		<div class="container pt-3 text-center" id="stats-table">
+			
+		</div>
+
+		<div class="container-fluid pt-3 text-center">
+				<!-- <button type="button" class="btn btn-dark text-center btn-lg">Back to Selection Screen</button> -->
+				<a class="btn btn-lg btn-dark" href="http://localhost:7777/toptrumps/">Back to Selection Screen</a>
 		</div>
 		
 		<script type="text/javascript">
@@ -38,8 +48,9 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				// helloJSONList();
+				// helloWord("Student");
+				getStatistics();
 				
 			}
 			
@@ -115,6 +126,46 @@
 				xhr.onload = function(e) {
  					var responseText = xhr.response; // the text of the response
 					alert(responseText); // lets produce an alert
+				};
+				
+				// We have done everything we need to prepare the CORS request, so send it
+				xhr.send();		
+			}
+
+			function getStatistics() {
+			
+				// First create a CORS request, this is the message we are going to send (a get request in this case)
+				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/showStatistics"); // Request type and URL+parameters
+				
+				// Message is not sent yet, but we can check that the browser supports CORS
+				if (!xhr) {
+  					alert("CORS not supported");
+				}
+
+				// CORS requests are Asynchronous, i.e. we do not wait for a response, instead we define an action
+				// to do when the response arrives 
+				xhr.onload = function(e) {
+ 					var response = xhr.response; // the text of the response
+ 					var responseArray;
+ 					
+ 					response=response.replace('[','');
+ 					
+ 					for(var i=1; i < response.length; i++){
+ 						responseArray = response.split(",");
+ 					}
+ 					
+					alert(responseArray); // lets produce an alert
+
+					var tableContent = '<table class="table table-dark">';
+					tableContent += '<tr><td> Number of Games: </td>	<td>'+ Math.round(responseArray[0]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Number of Human Wins: </td>	<td>'+ Math.round(responseArray[1]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Number of AI Wins: </td>	<td>'+ Math.round(responseArray[2]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Average Number of Draws: </td>	<td>'+ Math.round(responseArray[3]*100)/100 +' </td> </tr>';
+					tableContent += '<tr><td> Longest Game: </td>	<td>'+ Math.round(responseArray[4]*1)/1 +' </td> </tr>';
+
+					tableContent += '</table>';
+
+					$('#stats-table').append(tableContent);
 				};
 				
 				// We have done everything we need to prepare the CORS request, so send it
