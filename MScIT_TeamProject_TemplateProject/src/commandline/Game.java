@@ -1,6 +1,7 @@
 package commandline;
 
 import java.util.ArrayList;
+import java.util.*;
 
 public class Game {
 	
@@ -52,10 +53,12 @@ public class Game {
 		public void addPlayers(int amount) { //adds a number of AIs to the players list
 			humanPlayer= new Player("You", true);
 			players.add(humanPlayer);
-			roundWinner=humanPlayer;
 			for(int i=0;i<amount;i++) {
-				players.add(new Player(String.format("AI Player%d", i+1), false));
+				players.add(new Player(String.format("AI Player%d ", i+1), false));
 			}
+			Random randomNumber= new Random();
+			int random=randomNumber.nextInt(numberOfPlayers);
+			roundWinner=players.get(random);
 		}
 		
 		public void deal() { //creates a Dealer who splits the cards amongst the players
