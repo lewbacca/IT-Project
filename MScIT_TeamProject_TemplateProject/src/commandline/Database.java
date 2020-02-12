@@ -9,9 +9,9 @@ import java.sql.ResultSet;
 public class Database {
 	
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	private static final String IP= "jdbc:postgresql://localhost:5432/";
-	private static final String username="postgres";
-	private static final String password="AbliC2!ur";
+	private static final String IP= "jdbc:postgresql://52.24.215.108/EasternHemisandSemis";
+	private static final String username="EasternHemisandSemis";
+	private static final String password="EasternHemisandSemis";
 	private Connection connection=null;
 	private Statement stat=null;
 	private ResultSet rs=null;
@@ -39,6 +39,17 @@ public class Database {
 			System.out.println("Connection Failed!");
 			e.printStackTrace();
 		}
+		createTable();
+	}
+	
+	public void createTable() {
+		try {
+			stat=connection.createStatement();
+			String sqlCreate= "CREATE TABLE IF NOT EXISTS TopTrumps(gameNo int, humanWin boolean, numberOfDraws int,rounds int)";
+			stat.executeUpdate(sqlCreate);
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void updateDatabase() {
@@ -48,9 +59,6 @@ public class Database {
 		rounds=game.getNumberOfRounds();
 		if (connection!=null) {
 			try {
-				stat=connection.createStatement();
-				String sqlCreate= "CREATE TABLE IF NOT EXISTS TopTrumps(gameNo int, humanWin boolean, numberOfDraws int,rounds int)";
-				stat.executeUpdate(sqlCreate);
 				String sqlUpdate="INSERT INTO TopTrumps(gameNo,humanWin,numberOfDraws,rounds) VALUES ("+gameNumber+","+humanWin+","+numberOfDraws+","+rounds+")";
 				stat.executeUpdate(sqlUpdate);
 			}catch(SQLException e) {
