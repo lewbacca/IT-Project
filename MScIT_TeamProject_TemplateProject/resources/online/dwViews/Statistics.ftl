@@ -22,31 +22,82 @@
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
-    	<div class="container">
+    	<!-- Jumbotron with the title of the page -->
+    	<div class="jumbotron jumbotron-fluid text-center bg-dark text-white">
+    		<h1>Statistics of the Game</h1>		
+		</div>
 
-			<!-- Add your HTML Here -->
-		
+		<!-- Table container to show the table with statistics value -->
+		<div class="container pt-3 text-center" id="stats-table">
+			
+		</div>
+
+		<!-- Container which includes the two buttons in the page -->
+		<div class="container-fluid pt-3 text-center">
+				<button type="button" class="btn btn-lg btn-dark" onclick="resetStatistics()">Reset Statistics</button>
+				<a class="btn btn-lg btn-dark" href="http://localhost:7777/toptrumps/">Back to Selection Screen</a>
 		</div>
 		
 		<script type="text/javascript">
 		
-			// Method that is called on page load
-			function initalize() {
+				// Method that is called on page load
+				function initalize() {
+					getStatistics();
+				}
+				
+				// This function is used to parse the statistics sent from the REST API and creates the table to display them
+				function getStatistics() {
 			
-				// --------------------------------------------------------------------------
-				// You can call other methods you want to run when the page first loads here
-				// --------------------------------------------------------------------------
+				// First create a CORS request, this is the message we are going to send (a get request in this case)
+				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/showStatistics"); 
 				
-				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				// Message is not sent yet, but we can check that the browser supports CORS
+				if (!xhr) {
+  					alert("CORS not supported");
+				}
+
+				// CORS requests are Asynchronous, i.e. we do not wait for a response, instead we define an action
+				// to do when the response arrives 
+				xhr.onload = function(e) {
+ 					var statisticsArray = JSON.parse(xhr.response); // a JSON object is created with the statistics ArrayList sent from REST API
+                    //variable table content is used to store the html tag for the table creation and to put the information in the specific table cells
+					var tableContent = '<table class="table table-dark">';
+					tableContent += '<tr><td> Number of Games: </td>	<td>'+ Math.round(statisticsArray[0]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Number of Human Wins: </td>	<td>'+ Math.round(statisticsArray[1]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Number of AI Wins: </td>	<td>'+ Math.round(statisticsArray[2]*1)/1 +' </td> </tr>';
+					tableContent += '<tr><td> Average Number of Draws: </td>	<td>'+ Math.round(statisticsArray[4]*100)/100+' </td> </tr>';
+					tableContent += '<tr><td> Longest Game: </td>	<td>'+ Math.round(statisticsArray[3]*1)/1 +' </td> </tr>';
+
+					tableContent += '</table>';
+
+					$('#stats-table').append(tableContent);//the table content just created above is appended to the HTML container with id = stats-table
+                    
+				};
 				
+				// We have done everything we need to prepare the CORS request, so send it
+				xhr.send();		
 			}
-			
-			// -----------------------------------------
-			// Add your other Javascript methods Here
-			// -----------------------------------------
-		
+
+			// This function is used to send the request to reset statistics to the REST API.
+			function resetStatistics(){
+				// First create a CORS request, this is the message we are going to send (a get request in this case)
+				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/resetStatistics"); // Request type and URL+parameters
+				
+				// Message is not sent yet, but we can check that the browser supports CORS
+				if (!xhr) {
+  					alert("CORS not supported");
+				}
+
+				// CORS requests are Asynchronous, i.e. we do not wait for a response, instead we define an action
+				// to do when the response arrives 
+				xhr.onload = function(e) {
+					window.location.reload();// when the response from the API is received reload the page to call initialize() and getStatistics() once again to display the reseted statistics
+				};
+				
+				// We have done everything we need to prepare the CORS request, so send it
+				xhr.send();		
+			}
+
 			// This is a reusable method for creating a CORS request. Do not edit this.
 			function createCORSRequest(method, url) {
   				var xhr = new XMLHttpRequest();
@@ -70,55 +121,6 @@
 
   				 }
   				 return xhr;
-			}
-		
-		</script>
-		
-		<!-- Here are examples of how to call REST API Methods -->
-		<script type="text/javascript">
-		
-			// This calls the helloJSONList REST method from TopTrumpsRESTAPI
-			function helloJSONList() {
-			
-				// First create a CORS request, this is the message we are going to send (a get request in this case)
-				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/helloJSONList"); // Request type and URL
-				
-				// Message is not sent yet, but we can check that the browser supports CORS
-				if (!xhr) {
-  					alert("CORS not supported");
-				}
-
-				// CORS requests are Asynchronous, i.e. we do not wait for a response, instead we define an action
-				// to do when the response arrives 
-				xhr.onload = function(e) {
- 					var responseText = xhr.response; // the text of the response
-					alert(responseText); // lets produce an alert
-				};
-				
-				// We have done everything we need to prepare the CORS request, so send it
-				xhr.send();		
-			}
-			
-			// This calls the helloJSONList REST method from TopTrumpsRESTAPI
-			function helloWord(word) {
-			
-				// First create a CORS request, this is the message we are going to send (a get request in this case)
-				var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/helloWord?Word="+word); // Request type and URL+parameters
-				
-				// Message is not sent yet, but we can check that the browser supports CORS
-				if (!xhr) {
-  					alert("CORS not supported");
-				}
-
-				// CORS requests are Asynchronous, i.e. we do not wait for a response, instead we define an action
-				// to do when the response arrives 
-				xhr.onload = function(e) {
- 					var responseText = xhr.response; // the text of the response
-					alert(responseText); // lets produce an alert
-				};
-				
-				// We have done everything we need to prepare the CORS request, so send it
-				xhr.send();		
 			}
 
 		</script>
