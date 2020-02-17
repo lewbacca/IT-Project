@@ -1,8 +1,8 @@
 package commandline;
 
 import java.util.ArrayList;
-import java.util.*;
-
+import java.util.Random;
+//main model class, works with Player, Card and Dealer
 public class Game {
 	
 		//attributes
@@ -12,35 +12,33 @@ public class Game {
 		private Dealer dealer=null;
 		private ArrayList<Player> players= new ArrayList<Player>();
 		private ArrayList<Card> communalPile = new ArrayList<Card>();// array list communal pile
-		private String filePath;
 		private int numberOfRounds, numberOfDraws, numberOfPlayers, chosenCategory, initialDeckSize;
 		private boolean gameFinished, draw;
-		Card[] roundCards=null;
 		private Player gameWinner=null;
+		private Card[] roundCards=null;
 		//constructor
 		public Game(int numberOfPlayers,String filePath) {
 			this.numberOfPlayers=numberOfPlayers;
-			this.filePath=filePath;
 			dealer=new Dealer(this,filePath);
 		}
 		
 /*
- * uses the deck.poll() method on each member of the players array list,
- * compares the cards by category, 
- * sets the winner as roundWinner and add the cards to his deck
+ * sets up a new game by reseting some values
  */
 		public void resetGame(int numberOfPlayers) {
-			numberOfRounds=0;
+			numberOfRounds=0; 
 			numberOfDraws=0;
-			gameFinished=false;
-			draw=false;
-			gameWinner=null;
-			players.clear();
+			gameFinished=false; //game is now not finished
+			draw=false; //there is no draw currently
+			gameWinner=null; 
+			players.clear(); 
 			addPlayers(numberOfPlayers-1); //-1 because this should be the total number of players and we're adding AIs
-			dealer.createCards(filePath);
+			dealer.createCards(); //the cards are created 
 			
 		}
-		
+	/*
+	 * checks if any player has lost all their cards and sets their active status to false	
+	 */
 		public void loserCheck() {
 			for(int i=0;i<players.size();i++) {
 				if(players.get(i).getDeck().size()==0) {
@@ -48,38 +46,44 @@ public class Game {
 				}
 			}
 		}
-
+/*
+ * adds a number of AIs to the players list and a human player, makes the first player random
+ */
 		
-		public void addPlayers(int amount) { //adds a number of AIs to the players list
+		public void addPlayers(int amount) { 
 			humanPlayer= new Player("You", true);
 			players.add(humanPlayer);
 			for(int i=0;i<amount;i++) {
-				players.add(new Player(String.format("AI Player%d ", i+1), false));
+				players.add(new Player(String.format("AI Player%d", i+1), false));
 			}
-			Random randomNumber= new Random();
-			int random=randomNumber.nextInt(numberOfPlayers);
-			roundWinner=players.get(random);
+			Random randomNumber = new Random();
+			int random = randomNumber.nextInt(numberOfPlayers);
+			roundWinner = players.get(random);
 		}
 		
-		public void deal() { //creates a Dealer who splits the cards amongst the players
+		public void deal() { //sets the inital deck size before the cards are dealt and calls dealCards from dealer
 			initialDeckSize=dealer.getDeckSize();
 			dealer.dealCards();
 		}
-		
+		/*
+		 * takes the players' cards,
+		 * compares the cards by category, 
+		 * sets the winner as roundWinner and add the cards to their deck, saves cards to communal pile if necessary
+		 */		
 		public void compareCards() {  
 			roundCards=new Card[players.size()];
 			for (int i=0; i<players.size();i++) {  //get the cards from the players' decks
-				if(players.get(i).isActive()) {
-					roundCards[i]=players.get(i).getDeck().get(0);
-					players.get(i).getDeck().remove(0);
+				if(players.get(i).isActive()) { //only if they are active
+					roundCards[i]=players.get(i).getDeck().get(0); //adds the card to the round cards
+					players.get(i).getDeck().remove(0); //remove it from the player's deck (he might or might not win it back, but it's on the table)
 				}
 			}
 			int max=0; //used to hold the max value for the particular category that a card has 
 			int winnersIndex=0; //the winning player's index number in the list
 			int winnerCount=0; //used to differentiate between a draw and a win
 			for (int i=0; i<roundCards.length;i++) {	//used to compare the value of the cards for the attribute
-				if(roundCards[i] instanceof Card) {
-					if (roundCards[i].getDescription()[chosenCategory]>max) { //if it's bigger it is assigned as the new max 
+				if(roundCards[i] instanceof Card) { // checks if we have a card for that player (the spots in the array correspond to players)
+					if (roundCards[i].getDescription()[chosenCategory]>max) { //if it's bigger it is assigned as the new max
 						max=roundCards[i].getDescription()[chosenCategory];
 						winnersIndex=i; //used to address the winning player later 
 						winnerCount=1; //one winner only
@@ -99,15 +103,15 @@ public class Game {
 			}
 			else if (winnerCount==1) { //if there is only 1 max value - a winner
 				for (int i=0;i<roundCards.length;i++) { 
-					if (roundCards[i] instanceof Card) {
-						players.get(winnersIndex).addCardToDeck(roundCards[i]); //add the cards to his deck
+					if (roundCards[i] instanceof Card) { // just checks if there is a card object in that spot in the array
+						players.get(winnersIndex).addCardToDeck(roundCards[i]); //add the cards to their deck
 						
 					}
 				}
-				players.get(winnersIndex).incrementNumberOfRoundsWon();
+				players.get(winnersIndex).incrementNumberOfRoundsWon(); // increase the win count for the player
 				draw=false;
-				roundWinner=players.get(winnersIndex);
-				winningCard=roundCards[winnersIndex];
+				roundWinner=players.get(winnersIndex); //sets this player as the round winner
+				winningCard=roundCards[winnersIndex]; //sets the winningCard
 				if(!this.communalPile.isEmpty()) { //in case of a previous draw
 					for(int i=0;i<communalPile.size();i++) { // these cards are also added to his deck
 						players.get(winnersIndex).addCardToDeck(communalPile.get(i));
@@ -134,9 +138,12 @@ public class Game {
 			}
 		}
 		
+		/*
+		 * checks if the game has ended by checking if any player has all the cards, sets that player as a winner
+		 */
 		public boolean hasGameEnded() {
 			for(int i=0; i < players.size(); i++) {
-				if(players.get(i).getDeck().size() == initialDeckSize) {
+				if(players.get(i).getDeck().size() == initialDeckSize-communalPile.size()) { //this is to address the scenario, where a player gives their last card in a draw
 					gameFinished = true;
 					players.get(i).setWinner(true);
 					gameWinner=players.get(i);
@@ -145,7 +152,9 @@ public class Game {
 			return gameFinished;
 		}
 		
-		
+		/*
+		 * getters and setters 
+		 */
 		
 		public Player getHumanPlayer() {
 			return humanPlayer;
