@@ -46,14 +46,12 @@ public class TopTrumpsRESTAPI {
 	 * @param conf
 	 */
 	
-//	int[] statisticsForWeb = new int[10];
-	ArrayList<Integer> statisticsForWeb = new ArrayList<Integer>();
+	ArrayList<Double> statisticsForWeb = new ArrayList<Double>();
 	Statistics statistics = null;
 	Game game = null;
 	Controller controller = null;
 	Database database = null;
 	int numberOfPlayers;
-//	TopTrumpsCLIApplication topTrumpsCLI;
 	Player activePlayer = null;
 	
 	public TopTrumpsRESTAPI(TopTrumpsJSONConfiguration conf) {
@@ -64,6 +62,7 @@ public class TopTrumpsRESTAPI {
 		this.controller=new Controller(game);
 		this.game.resetGame(5);
 		this.game.deal();
+		this.statistics = controller.getStatistics();
 		activePlayer = game.getRoundWinner();
 	}
 	
@@ -106,59 +105,53 @@ public class TopTrumpsRESTAPI {
 	
 	@GET
 	@Path("/showStatistics")
-	public ArrayList<Integer> getStatisticsForWeb() throws IOException{
-		statisticsForWeb.add(statistics.getTotalGames());
-		statisticsForWeb.add(statistics.getHumanWins());
-		statisticsForWeb.add(statistics.getComWins());
-		statisticsForWeb.add(statistics.getLongestGame());
-		statisticsForWeb.add((int) statistics.getAverageDraws());
-		
+	/**
+	 * This method is used to retrive the statistics value, add them to an ArrayList object 
+	 * and send them back to the Statistics.ftl to be used in the getStatistics() JavaScript 
+	 * which creates and displays the statistics in the Web Application. 
+	 * @return - An ArrayList with statistics
+	 * @throws IOException
+	 * */
+	public ArrayList<Double> getStatisticsForWeb() throws IOException{
+		statisticsForWeb.clear();
+		statistics.stats();
+		statisticsForWeb.add((double) statistics.getTotalGames());
+		statisticsForWeb.add((double) statistics.getHumanWins());
+		statisticsForWeb.add((double) statistics.getComWins());
+		statisticsForWeb.add((double) statistics.getLongestGame());
+		statisticsForWeb.add( statistics.getAverageDraws());
 		return statisticsForWeb;
-		
-//		StatisticsForWeb.add(commandline.Statistics.getTotalGames());
-		
-//		statisticsForWeb[1] = statistics.getHumanWins();
-//		statisticsForWeb[2] = statistics.getComWins();
-//		statisticsForWeb[3] = statistics.getLongestGame();
-//		statisticsForWeb[4] = (int) statistics.getAverageDraws();
-		
-		
 	}
 	
 	
 	@GET
 	@Path("/resetGameWebApp")
+	/**
+	 * This method is used to reset the game to the wanted number of players. It gets the parameter from the 
+	 * JavaScript in the web browser and redo the whole initialization of the game to be played. 
+	 * @return - A String containing the number of players with which the game was reset.
+	 * @throws IOException
+	 * */
 	public String resetGameWebApp(@QueryParam("numberOfPlayers") int numberOfPlayers) throws IOException{
-		this.numberOfPlayers = numberOfPlayers;
-		game = new Game(numberOfPlayers,"StarCitizenDeck.txt");
-		controller=new Controller(game);
-		game.resetGame(numberOfPlayers);
-		game.deal();
-		activePlayer = game.getRoundWinner();
-		return "The game was reset with " + numberOfPlayers + " players";
+		this.numberOfPlayers = numberOfPlayers;//sets the number of players in the game
+		game = new Game(numberOfPlayers,"StarCitizenDeck.txt");// reinitialize the game
+		controller=new Controller(game);//reinitialize the controller
+		game.resetGame(numberOfPlayers);//resets the game with the number of players
+		game.deal();//the game deals the cards among the players
+		activePlayer = game.getRoundWinner();//the active player is set initially
+		statistics = controller.getStatistics();//the reference to the statistics object is created
+		return "The game was reset with " + numberOfPlayers + " players";//returns a message
 	}
 	
 	
-	
-//	@GET
-//	@Path("/game")
-//	public String initializeGame(@QueryParam("numberOfPlayers") int numberOfPlayers) throws IOException{
-//		topTrumpsCLI = new TopTrumpsCLIApplication();
-//		this.game = new Game(5,"StarCitizenDeck.txt");
-//		this.controller=new Controller(game);
-//		this.game.resetGame(5);
-//		this.game.deal();
-//		controller.play();
-//		this.game = new Game(numberOfPlayers,"StarCitizenDeck.txt");
-//		this.controller=new Controller(game);
-//		this.game.resetGame(numberOfPlayers);
-//		this.game.deal();
-//		activePlayer = game.getRoundWinner();
-//		return "The game has been created with " + numberOfPlayers + " players!";
-//	}
-//	
 	@GET
 	@Path("/extractCard")
+	/** 
+	 * This method is used to get the top card of one player represented by playerIndex variable 
+	 * and run the method to state who's still an active player.
+	 * @return - A string containing the top card object of a specific player
+	 * @throws IOException
+	 * */
 	public String getCard(@QueryParam("playerIndex") int playerIndex) throws IOException{
 		game.loserCheck();
 		return oWriter.writeValueAsString(game.getPlayers().get(playerIndex).getDeck().get(0));
@@ -166,30 +159,47 @@ public class TopTrumpsRESTAPI {
 	
 	@GET
 	@Path("/playLikeHuman")
+	/**
+	 * This method is used to play a round with a specific category chosen. 
+	 * @return - a String message to be displayed in the message box
+	 * @throws IOException
+	 *  */
 	public String playRoundHuman(@QueryParam("selectedCategoryByHuman") int selectedCategoryByHuman) throws IOException{
-		String messageWithWinner;
+		String messageWithWinner;//message to be displayed in the message box in the WebApp
 		
+		//if the round winner is human call next round to increment the number of rounds
 		if(game.getRoundWinner().isHuman()) {
 			game.nextRound();
 		}
 		
-		game.setChosenCategory(selectedCategoryByHuman);
+		game.setChosenCategory(selectedCategoryByHuman);//sets the preferred category to be played with
 		
-		game.compareCards();
+		game.compareCards();//compare the cards in the game and sets the winner
 		
-		game.loserCheck();
+		game.loserCheck();//check which players still have cards
 		
-		game.hasGameEnded();
+		//when the game is finished, update the statistics
+		if(game.hasGameEnded()) {
+			statistics.updateStats();
+		}
+		
+		messageWithWinner = "The selected category was " + game.getRoundWinner().getDeck().get(0).getCategoryName(selectedCategoryByHuman) + "! <br>";
 		
 		if(!game.isDraw()) {
-			messageWithWinner = "\n Round " + game.getNumberOfRounds() + ": " + game.getRoundWinner().getName() +" won this round.";
+			messageWithWinner += "Round " + game.getNumberOfRounds() + ": " + game.getRoundWinner().getName() +" won this round.";
 		}else 
-			messageWithWinner = "It's a draw. \nThere are " + game.getCommunalPile().size() + " cards in the communal pile";
-		return messageWithWinner;
+			messageWithWinner += "Round " + game.getNumberOfRounds() + ": It's a draw. There are " + game.getCommunalPile().size() + " cards in the communal pile";
+		
+		return messageWithWinner;// return the message with the winner and selected category
 	}
 	
 	@GET
 	@Path("/getActivePlayer")
+	/** 
+	 * This method is used to retrieve the active player (round winner) and send it to the WebApp
+	 * @return - a String containing the object of the active player (round winner)
+	 * @throws IOException
+	 * */
 	public String getActivePlayer() throws IOException{
 		activePlayer = game.getRoundWinner();
 		return oWriter.writeValueAsString(activePlayer);
@@ -197,16 +207,24 @@ public class TopTrumpsRESTAPI {
 	
 	@GET
 	@Path("/AIPlay")
+	/**
+	 * This method is used when the active player is an AI player to retrieve its chosen category and play with it 
+	 * by calling the playRoundHuman method. 
+	 * @return - A String containing the message with the winner and category chosen by the AI. 
+	 * @throws IOException
+	 *  */
 	public String playRoundAI() throws IOException {
-		game.nextRound();
-		
-//		playRoundHuman(game.getChosenCategory());
-		
+		game.nextRound();		
 		return oWriter.writeValueAsString(playRoundHuman(game.getChosenCategory()));
 	}
 	
 	@GET
 	@Path("/getAllCards")
+	/** 
+	 * This method is used to retrieve the value of each players deck size left.
+	 * @return - a String containing the array with the deck sizes values
+	 * @throws IOException
+	 * */
 	public String getDeckSize() throws IOException{
 		int[] deckSizes = new int[numberOfPlayers];
 		for(int i=0; i < deckSizes.length; i++) {
@@ -217,27 +235,37 @@ public class TopTrumpsRESTAPI {
 	
 	@GET
 	@Path("/getCommunalPileSize")
+	/** 
+	 * This method is used to send to the WebApp the size of the communal pile
+	 * @return - a String containing the size of the communal pile
+	 * @throws IOException 
+	 * */
 	public String getCommunalPileSize() throws IOException{
 		return oWriter.writeValueAsString(game.getCommunalPile().size());
 	}
 	
 	
 	@GET
-	@Path("/checkPlayersForCards")
-	public String checkPlayesrForCards() throws IOException{
-		boolean[] playerHasCardsLeft = new boolean[5];
-		for(int i=0; i < playerHasCardsLeft.length; i++) {
-			playerHasCardsLeft[i] = game.getPlayers().get(i).isActive();
-		}
-		return oWriter.writeValueAsString(playerHasCardsLeft);
-	}
-	
-	@GET
 	@Path("/getWinner")
+	/** 
+	 * This method is used to retrieve the winner of the whole game and send it
+	 * to the WebApp.
+	 * @return - a String containing the object of the game winner
+	 * @throws IOException
+	 * */
 	public String getWinner() throws IOException{
-		
-		
 		return oWriter.writeValueAsString(game.getGameWinner());
 	}
 	
+	@GET
+	@Path("/resetStatistics")
+	/** 
+	 * This method is used in the statistics screen to reset the statistics in the database
+	 * @return - a String which contains a message proof that the method was run
+	 * @throws IOException
+	 * */
+	public String resetStatistics() throws IOException{
+		statistics.resetStats();
+		return "resetStatistics method has been successfully ran!";
+	}
 }
